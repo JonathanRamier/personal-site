@@ -21,9 +21,8 @@ var plugins             ,
 plugins = [
     new HtmlWebpackPlugin({
         title: 'Jonathan RAMIER - Personal Website',
-        filename: 'index.html',
+        template: 'src/index.html',
         //favicon: 'toto',
-        inject: 'body',
         minify: {
             removeComments: true,
             collapseWhitespace: true,
@@ -47,6 +46,7 @@ plugins = [
 if (ENV === 'production') {
 
     var prod_plugins = [
+        new OccurenceOrderPlugin(true),
         new ExtractTextPlugin('[name].css'),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({

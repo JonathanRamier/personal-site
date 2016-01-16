@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start karma.conf.js",
     "start": "webpack-dev-server --progress --port=5500 --colors --inline --hot --watch",
-    "build": "webpack -p"
+    "build": "rm -fr dist/ && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-minifier": "^1.1.1",
     "html-webpack-plugin": "^1.7.0",
+    "raw-loader": "^0.5.1",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.5",
     "webpack": "^1.12.11",
