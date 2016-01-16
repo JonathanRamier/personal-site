@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{%= o.htmlWebpackPlugin.options.title %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<personal-jo>
+    Loader ...
+</personal-jo>
+
+{% for (var file in o.htmlWebpackPlugin.files.js) { %}
+<script src="{%= o.htmlWebpackPlugin.files.js[file] %}" type="text/javascript"></script>
+{% } %}
+</body>
+</html>
