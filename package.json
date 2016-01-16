@@ -4,7 +4,9 @@
   "description": "This is my personal web site written in angular 2 with webpack and typescript",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "start": "webpack-dev-server --progress --port=5500 --colors --inline --hot --watch",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,22 @@
   "bugs": {
     "url": "https://github.com/JonathanRamier/personal-site/issues"
   },
-  "homepage": "https://github.com/JonathanRamier/personal-site#readme"
+  "homepage": "https://github.com/JonathanRamier/personal-site#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-minifier": "^1.1.1",
+    "html-webpack-plugin": "^1.7.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
+  }
 }
