@@ -1,0 +1,11 @@
+- Installation
+- Usage
+    -- Example
+    -- Example Output
+- Documentation
+    -- Options
+        --- option1
+        --- option2
+    -- API
+- License
+- Contributing
